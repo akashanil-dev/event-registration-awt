@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "CodeCatalyst Hackathon",
+    "date": "March 15, 2026",
+    "location": "Main Auditorium",
+    "description": "A 24-hour hackathon to build innovative solutions for smart cities. Bring your team!",
+    "banner": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 50,
+    "registered": 1
+  },
+  {
+    "id": 2,
+    "title": "AI in Healthcare Summit",
+    "date": "March 16, 2026",
+    "location": "Conference Room A",
+    "description": "Explore the latest breakthroughs in artificial intelligence applied to modern healthcare.",
+    "banner": "https://images.unsplash.com/photo-1576091160550-2173ff9e5eb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 100,
+    "registered": 0
+  },
+  {
+    "id": 3,
+    "title": "Web3 & Blockchain Workshop",
+    "date": "March 17, 2026",
+    "location": "Lab 4",
+    "description": "Hands-on workshop on building decentralized applications (dApps) using Solidity.",
+    "banner": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 30,
+    "registered": 0
+  },
+  {
+    "id": 4,
+    "title": "Cybersecurity Capture The Flag",
+    "date": "March 18, 2026",
+    "location": "Computer Center",
+    "description": "Compete against other teams to find vulnerabilities and capture flags in our custom sandbox.",
+    "banner": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 40,
+    "registered": 0
+  },
+  {
+    "id": 5,
+    "title": "Startup Pitch Competition",
+    "date": "March 19, 2026",
+    "location": "Seminar Hall",
+    "description": "Pitch your tech startup idea to a panel of industry experts and investors.",
+    "banner": "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 20,
+    "registered": 20
+  },
+  {
+    "id": 6,
+    "title": "Game Development with Unity",
+    "date": "March 20, 2026",
+    "location": "Lab 2",
+    "description": "Learn the basics of creating 3D games using the Unity engine in this interactive session.",
+    "banner": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "seats": 2,
+    "registered": 1
+  }
+]
