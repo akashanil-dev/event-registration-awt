@@ -27,7 +27,7 @@ Overall, the **Online Event Registration Portal** provides an efficient, reliabl
 | Albin Suresh | HTML Developer | Develop semantic HTML structure |
 | Alfiya Ismail | CSS Developer | Implement styling and responsive design |
 | Akshai Raj | Bootstrap Developer | Create responsive components using Bootstrap |
-| Abhinand S Pillai | JavaScript Developer | Implement client-side logic |
+| Abhinanth S Pillai | JavaScript Developer | Implement client-side logic |
 | Abhilash KK | jQuery Developer | Implement form validation and DOM manipulation |
 | Abhinand M A | AJAX Developer | Handle asynchronous requests |
 | Adonia Cyrus | PHP Backend Developer | Develop server-side logic |
