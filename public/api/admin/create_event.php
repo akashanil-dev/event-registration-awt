@@ -1,8 +1,8 @@
 <?php
 
-include("../config/db.php");
-include("../config/response.php");
-include("../middleware/admin.php");
+include("../../../config/database.php");
+include("../../../app/helpers/response.php");
+include("../../../app/middleware/admin.php");
 
 $title = $_POST['title'];
 $description = $_POST['description'];

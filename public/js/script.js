@@ -53,8 +53,8 @@ function filterEvents(cat, btn) {
 /* ── REGISTER BUTTON ── */
 function handleRegister(eventId) {
   if (!currentUser) {
-    pendingEvent = eventId;          
-    openAuthModal('login', true);    
+    pendingEvent = eventId;
+    openAuthModal('login', true);
   } else {
     openReg(eventId);
   }
@@ -96,7 +96,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
   /* ─── REPLACE WITH ───────────────────────────────────────────────────
      const fd = new FormData(this);
-     fetch('login.php', { method:'POST', body: fd })
+     fetch('api/auth/login.php', { method:'POST', body: fd })
        .then(r => r.json())
        .then(data => {
          if (data.success) loginSuccess(data.user);
@@ -128,7 +128,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
 
   /* ─── REPLACE WITH ───────────────────────────────────────────────────
      const fd = new FormData(this);
-     fetch('signup.php', { method:'POST', body: fd })
+     fetch('api/auth/signup.php', { method:'POST', body: fd })
        .then(r => r.json())
        .then(data => {
          if (data.success) loginSuccess(data.user);
@@ -221,7 +221,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
   fd.append('event_id', document.getElementById('selectedEvent').value);
 
   /* ─── REPLACE WITH ───────────────────────────────────────────────────
-     fetch('register.php', { method:'POST', body: fd })
+     fetch('api/events/register_event.php', { method:'POST', body: fd })
        .then(r => r.json())
        .then(data => {
          closeReg();
@@ -243,7 +243,7 @@ function loadParticipants() {
   list.innerHTML = `<div class="table-row"><span style="grid-column:1/-1;text-align:center;color:var(--gray)">Loading…</span></div>`;
 
   /* ─── REPLACE WITH ───────────────────────────────────────────────────
-     fetch('participants.php')
+     fetch('api/events/get_event_participants.php')
        .then(r => r.json())
        .then(data => renderParticipants(data));
   ─────────────────────────────────────────────────────────────────── */

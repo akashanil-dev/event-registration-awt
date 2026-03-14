@@ -1,7 +1,7 @@
 <?php
 
-include("../config/db.php");
-include("../config/response.php");
+include("../../../config/database.php");
+include("../../../app/helpers/response.php");
 
 $sql = "SELECT 
         e.event_id,
@@ -15,17 +15,17 @@ $sql = "SELECT
         ON e.event_id = r.event_id
         GROUP BY e.event_id";
 
-$result = mysqli_query($conn,$sql);
+$result = mysqli_query($conn, $sql);
 
 $events = array();
 
-while($row = mysqli_fetch_assoc($result)){
+while ($row = mysqli_fetch_assoc($result)) {
 
     $row["available_seats"] = $row["total_seats"] - $row["registered"];
 
     $events[] = $row;
 }
 
-sendResponse(true,$events);
+sendResponse(true, $events);
 
 ?>

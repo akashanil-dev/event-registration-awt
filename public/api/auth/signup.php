@@ -1,6 +1,6 @@
 <?php
 
-include("../config/db.php");
+include("../../../config/database.php");
 
 $data = json_decode(file_get_contents("php://input"), true);
 
@@ -12,15 +12,15 @@ $phone = $data['phone'];
 $sql = "INSERT INTO users (name,email,password,phone)
         VALUES ('$name','$email','$password','$phone')";
 
-if(mysqli_query($conn,$sql)){
+if (mysqli_query($conn, $sql)) {
     echo json_encode([
-        "status"=>"success",
-        "message"=>"User registered successfully"
+        "status" => "success",
+        "message" => "User registered successfully"
     ]);
-}else{
+} else {
     echo json_encode([
-        "status"=>"error",
-        "message"=>"Registration failed"
+        "status" => "error",
+        "message" => "Registration failed"
     ]);
 }
 
